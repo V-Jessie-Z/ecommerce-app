@@ -1,22 +1,31 @@
+
 .video-background-wrapper {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  z-index: -1;
   overflow: hidden;
 }
 
 .video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -5;
 }
 
-.page-content {
+
+.overlay-content {
   position: relative;
   z-index: 1;
-  text-align: center;
-  padding-top: 30vh;
+  min-height: 100vh;
+  color: white; 
+}
+
+/* Prevent any weird spacing */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }

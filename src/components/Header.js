@@ -9,16 +9,17 @@ function Header() {
      <header style={{ 
         padding: '1rem', 
         borderBottom: '1px solid #ccc',
-        backgroundColor:'#701c3f',
+        background: 'linear-gradient(to right, rgb(77, 17, 42) 40% ,rgb(250, 249, 238))', 
         color:'white',
+        borderBottom: 'solid 3px rgb(77, 17, 42)',
         display: 'flex',
         justifyContent:'space-between',
         alignItems:'center',
         padding:'1rem' }}>
 
     <img src="/images/banner-logo.png" alt="Exstaphia Logo" to="/home" style={{ 
-        height:'100px',
-        marginLeft:'20px', }} />
+        height:'50px',
+        marginLeft:'20px',}} />
     <nav style={{
         display:'flex',
         color:'#e2b84f',
@@ -29,7 +30,7 @@ function Header() {
                 <a to="/home" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   style={{ color: 'white', margin: '0 0.5rem' }}>
+                   style={{ color: 'rgb(112, 28, 63)', margin: '0 0.5rem' }}>
                   <FaHome size={24} />
                 </a>
         </Link>
@@ -37,7 +38,7 @@ function Header() {
                     <a to="/Cart" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   style={{ color: 'white', margin: '0 0.5rem' }}>
+                   style={{ color: 'rgb(112, 28, 63)', margin: '0 0.5rem' }}>
                   <FaCartPlus size={24} />
                 </a>
         </Link> 
@@ -45,7 +46,7 @@ function Header() {
                      <a to="/admin" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   style={{ color: 'white', margin: '0 0.5rem' }}>
+                   style={{ color: 'rgb(112, 28, 63)', margin: '0 0.5rem' }}>
                   <FaUser size={24} />
                 </a>
         </Link>
